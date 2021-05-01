@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="iwlogo.png" type="image/gif" sizes="20x20">
 <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 </head>
 <body>
@@ -17,10 +18,11 @@
         <div class="topnav" id="myTopnav">
             <img src="iwlogo.png" id="imgmain" class="pls">
             <!-- <a href="#home" class="active">Home</a> -->
-            <a id="fontchange" href="#news">News</a>
-            <a id="fontchange1" href="#contact">Contact</a>
+            <a id="fontchange" href="#news">Contact</a>
+            <a id="fontchange1" href="#contact">Events</a>
             <a id="fontchange2" href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a id="night" href="nightmode.html"><img src="nm1.png"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction();f7()">
               <i class="fa fa-bars" id="bars"></i>
             </a>
           </div>
@@ -31,10 +33,19 @@
   <span
      class="txt-rotate"
      data-period="2000"
-     data-rotate='[ "nerdy.", "simple.", "pure JS.", "pretty.", "fun!" ]'></span>
+     data-rotate='[ "modern day beatniks.", "frolic souls.", "indomitable commitments.", "indefatigable efforts.", "YOU!" ]'></span>
 </p>
 </div>
-
+<script>
+  function f7() {
+        var y = document.getElementById("imgmain");
+        if (y.style.display === "none") {
+          y.style.display = "block";
+        } else {
+          y.style.display = "none";
+        }
+      }
+</script>
 <div class="flex-container" id="flex1">
     <div class="empty"></div>
     <div class="one">
@@ -162,12 +173,12 @@ window.onload = function() {
             <img src="idea.svg" id="ideaimg">
           </div>
           <div class="col-lg-6">
-            <p id="ideatxt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veritatis, consequuntur recusandae amet obcaecati error sapiente voluptate fuga placeat illum aspernatur eos sit magnam enim. Ducimus provident dolor quis explicabo!</p>
+            <p id="ideatxt1">The Inception Wave-Student Chapter draws its ideology from our parent company’s, that of bringing like-minded individuals with an entrepreneurial drive across fields together. A multitude of students collaborate in an expansive range of domains which include- Content Writing, Web Development, H.R., Graphic Design and Marketing. These creative minds are inculcated with the value of professionalism up to industry standards, helping them grow as leaders across fields aligning with their own personal ambitions. We form a symbiotic relationship between Inception Wave and its close-knit network of student community across the country who work tirelessly together to grow and innovate.</p>
           </div>
         </div>
       </div>
       </div>
-      <div class="events" style="background-color: #111111;">
+      <div class="events" style="background-color: #222222;">
         <p id="ideatxt">E V E N T S</p>
         <div class="flex-container" id="flex2">
           <div class="car"></div>
@@ -204,30 +215,169 @@ window.onload = function() {
     "max-glare": 0.5                  
 	});
   </script>
-  <div class="upcom" style="background-color: #111111;">
-    <div class="container">
+  <div class="upcom" style="background-color: #222222;">
+    <div class="container-fluid">
       <div class="row">
     <div class="col-sm-5">
-      <p id="upcomtxt">UPCOMING EVENTS...</p>
+      <p id="upcomtxt">UPCOMING EVENT</p>
+      <img src="wh.svg" class="whand">
     </div>
     <div class="col-sm-7">
       <div class="card9">
-        <img src="https://static.vecteezy.com/system/resources/previews/000/693/180/non_2x/black-mat-geometric-red-and-blue-background-vector.jpg" alt="Avatar" style="width:100%;border-radius:10px">
+        <img src="webmania.png" alt="Avatar" class="upimg">
         <div class="container1">
-          <h4><b>JOHN DOE</b></h4> 
-          <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Lorem</p> 
+          <a href="#" class="button">Register here</a>
+          <!-- <h4><b>JOHN DOE</b></h4> 
+          <p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem Lorem</p>  -->
         </div>
       </div>
     </div>
   </div>
   </div>
   </div>
-  <div class="moments" style="background-color: #111111;">
-    <p id="glimpse">Moments from last event...</p>
-    <img src="https://static.vecteezy.com/system/resources/previews/000/693/180/non_2x/black-mat-geometric-red-and-blue-background-vector.jpg" id="momimg">
+  <div class="moments" style="background-color: #111111; position: relative;">
+    <p id="glimpse">Moments from last event</p>
+    <img src="tv.svg" class="tv">
+    <img src="among.gif" id="momimg">
   </div>
-  <div class="domain" style="background-color: #111111;">
+  <!-- <div class="domain" style="background-color: #222222;">
     <p id="ideatxt">D O M A I N S</p>
+    <div class="container">
+      <div class="row" id="drow">
+        <div class="col-md-5">
+          <div class="s">
+          <p id="upcomtxt">Graphic Designing</p>
+          <p id="gdtxt">There's more to things than what meets the eye, but sometimes it's just the design that
+            keeps you staring.</p></div>
+        </div>
+        <div class="col-md-7">
+          <img class="gdimg" src="gd1.gif">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" id="drow">
+        <div class="col-md-6 col-md-push-6">
+          <img class="gdimg1" src="wb.gif">
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+          <div class="s">
+          <p id="upcomtxt">Web Development</p>
+          <p id="gdtxt">If you don't look good on the web, do you even look good?</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="drow">
+        <div class="col-md-6">
+          <p id="upcomtxt">Content Writing</p>
+          <p id="gdtxt">Good content is like good health, you don't realise it's value until you don't have it
+            anymore.</p>
+        </div>
+        <div class="col-md-6">
+          <img class="gdimg" src="https://static.vecteezy.com/system/resources/previews/000/693/180/non_2x/black-mat-geometric-red-and-blue-background-vector.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="drow">
+        <div class="col-md-6">
+          <img class="gdimg" src="https://static.vecteezy.com/system/resources/previews/000/693/180/non_2x/black-mat-geometric-red-and-blue-background-vector.jpg">
+        </div>
+        <div class="col-md-6">
+          <p id="upcomtxt">Marketing</p>
+          <p id="gdtxt">Good marketing makes the company look smart. Great marketing makes the
+            customer feel smart.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="domain" style="background-color: #222222;">
+    <p id="ideatxt">D O M A I N S</p>
+    <div class="container">
+      <img src="hum.png" class="human">
+      <img src="hum2.png" class="human2">
+      <div class="row" id="frow">
+        <div class="col-md-5">
+          <img src="gdd.svg" class="gdimg">
+        </div>
+        <div class="col-md-7">
+          <p id="gdhd">Graphic Designing</p>
+          <p id="gdtxt">There's more to things than what meets the eye, but sometimes it's just the design that
+            keeps you staring.</p>
+        </div>
+      </div>
+      <div class="row" id="frow">
+        <div class="col-md-5">
+          <img src="webd.svg" class="gdimg">
+        </div>
+        <div class="col-md-7">
+          <p id="gdhd">Web Development</p>
+          <p id="gdtxt" style="text-align: center;">If you don't look good on the web, do you even look good?</p>
+        </div>
+      </div>
+      <div class="row" id="frow">
+        <div class="col-md-5">
+          <img src="mard.svg" class="gdimg">
+        </div>
+        <div class="col-md-7">
+          <p id="gdhd">Marketing</p>
+          <p id="gdtxt">Good marketing makes the company look smart. Great marketing makes the
+            customer feel smart.</p>
+        </div>
+      </div>
+      <div class="row" id="frow">
+        <div class="col-md-5">
+          <img src="cond.svg" class="gdimg">
+        </div>
+        <div class="col-md-7">
+          <p id="gdhd">Content Writing</p>
+          <p id="gdtxt">Good content is like good health, you don't realise it's value until you don't have it
+            anymore.</p>
+        </div>
+      </div>
+      <div class="row" id="frow">
+        <div class="col-md-5">
+          <img src="evd.svg" class="gdimg">
+        </div>
+        <div class="col-md-7">
+          <p id="gdhd">Events</p>
+          <p id="gdtxt" style="text-align: center;">Don't tell me how powerful you are, show it!</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <section>
+    <p class="wanna">Wanna RIDE the wave with us?</p>
+    <a href="#" class="join">JOIN US</a>
+    <div class="container" id="cont">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="team">Have a look at <span class="ourt"><a>OUR TEAM</a></span></p>
+        </div>
+        <div class="col-md-4">
+          <img src="follow.svg" class="follimg">
+        </div>
+        <div class="col-md-4">
+          <p class="us">Follow us at:</p>
+          <div class="icons">
+          <a href="#"><img src="ins.gif" class="icon"></a>
+          <a href="#"><img src="lin.gif" class="icon"></a>
+          <a href="#"><img src="med.gif" class="icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+    <p class="final">Copyright ® IWSCSRM 2021</p>
+    </section>
+    <!-- <script>
+      function myFunction7() {
+        document.getElementById("demo").innerHTML = "JOIN US";
+      }
+      </script> -->
 </body>
 </html>
